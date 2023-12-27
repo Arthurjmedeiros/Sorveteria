@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Litoral Tropical</title>
+<link href="fd" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+
+header {
+    background-color: #dc2626; /* ou a cor desejada para o menu */
+  }
+
+  .header-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  .header-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #dc2626;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: bottom right;
+  }
+
+  .header-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .step {
+    background-color: #f3f3f3;
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+  .step:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .btn-primary {
+    background-color: #dc2626;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background-color: #dc2626;
+  }
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+
+  .highlight-yellow {
+    color: #ffc107;
+  }
+
+
+  body {
+            background-image: url('mar.png');
+            background-size: 122% auto; /* Definir a largura como 100% e altura automática */
+            background-position: center top; /* Ajuste para mover a imagem para baixo */
+            background-repeat: no-repeat;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            
+        }
+        
+
+        header {
+            background-color: #dc2626;
+        }
+
+        .header-link {
+            color: white;
+        }
+
+        .header-link:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-yellow {
+            color: #ffc107;
+        }
+
+        .max-width-container {
+            max-width: 100%; /* Garante que a largura máxima é 100% do viewport */
+            margin: 0 auto; /* Centraliza o conteúdo no meio da página */
+        }
+
+        .text-section {
+            padding-top: 80px; /* Ajuste a altura conforme necessário */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+
+
+        .step {
+    background-color: #f3f3f3;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    height: 100%; /* Adicione esta linha para definir a altura */
+    box-sizing: border-box; /* Adicione esta linha para incluir borda e preenchimento na altura */
+}
+
+.step:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+
+.step-background {
+    background-image: url('wpp.jpg');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    color: #fff; /* Define a cor do texto para branco (ou ajuste conforme necessário) */
+    padding: 20px; /* Ajuste conforme necessário para evitar que o texto fique muito próximo às bordas */
+}
+
+
+        
+
+        
+    </style>
+</head>
+  
+<body class="bg-white text-gray-700 font-sans">
+    <header class="bg-white shadow-md">
+        <div class="max-width-container px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="sorvete.png" alt="Logo" class="h-12 w-15 mr-6">
+      <nav class="hidden md:flex space-x-10">
+        <a href="#" onclick="scrollToSection('picole-tropical')" class="text-gray-500 hover:text-gray-900 header-link">Produtos</a>
+        <a href="#" class="text-gray-500 hover:text-gray-900 header-link">Sobre a Tropical</a>
+        <a href="#" class="text-gray-500 hover:text-gray-900 header-link">Seja um Revendedor</a>
+        <a href="#" class="text-gray-500 hover:text-gray-900 header-link">Inscreva-se</a>
+      </nav>
+    </div>
+
+    <div class="flex items-center">
+      <input type="search" placeholder="Buscar" class="border-2 border-gray-300 rounded-md px-4 py-2 mr-4">
+      <button class="text-gray-500 hover:text-gray-900">
+        <svg xmlns="xxxxx" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h13M8 12h13m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="max-width-container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <section class="text-center text-section">
+        <h1 class="text-4xl font-bold mb-4">
+            A melhor <span class="highlight-yellow">sorveteria</span> de <span
+                class="highlight-yellow">São João de Meriti</span>
+        </h1>
+        <p class="mb-8">Venha conhecer a Litoral Tropical!</p>
+        </div>
+    <!-- <img src="mar.png" alt="Party Image" class="mx-auto mb-8" style="width: 900px; height: 500px;"> -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="step">
+          <h2 class="font-bold text-lg mb-2">01. Entre em contato via WhatsApp</h2>
+          <p>Compartilhe conosco suas dúvidas e informações!</p>
+        </div>
+        <div class="step">
+          <h2 class="font-bold text-lg mb-2">02. Faça seu pedido em nosso catálogo digital</h2>
+          <p>Em nosso catálogo conseguirá escolher todos os seus sabores favoritos!</p>
+        </div>
+        <div class="step">
+          <h2 class="font-bold text-lg mb-2">03. Receba Tropical na sua festa!</h2>
+          <p>Agora, resta apenas esperar pelo aguardado momento da celebração e desfrutar ao compartilhar alegria com os seus convidados!</p>
+        </div>
+      </div>
+    <a href="#" class="btn-primary mt-8 mb-11">Peça já</a>
+
+
+
+
+
+    <section id="picole-tropical" class="flex mt-8">
+
+
+
+    <section class="flex mt-8">
+        <div class="w-1/2">
+          <!-- Imagem à esquerda -->
+          <img src="picole.jpg" alt="Descrição da imagem" class="max-w-full h-auto rounded-full">
+        </div>
+        <div class="w-1/2 px-4">
+          <!-- Texto à direita -->
+          <h2 class="text-2xl font-bold mb-4">Picolé Tropical</h2>
+          <p>Seu texto aqui... Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit.
+            Tenetur in aliquam porro laboriosam earum perferendis
+            libero provident neque maxime minima expedita,
+            qui suscipit blanditiis quas, nisi quo iste,
+            perspiciatis minus!</p>
+            <br>
+
+            <p>Seu texto aqui... Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Tenetur in aliquam porro laboriosam earum perferendis
+                libero provident neque maxime minima expedita,
+                qui suscipit blanditiis quas, nisi quo iste,
+                perspiciatis minus!</p>
+                <br>
+
+            <p>Seu texto aqui... Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit.
+                Tenetur in aliquam porro laboriosam earum perferendis
+                libero provident neque maxime minima expedita,
+                qui suscipit blanditiis quas, nisi quo iste,
+                perspiciatis minus!</p>
+
+
+
+                <section class="flex mt-8">
+                    <div class="w-1/2">
+                      <!-- Imagem à esquerda -->
+                      <img src="picole.jpg" alt="Descrição da imagem" class="max-w-full h-auto rounded-full">
+                    </div>
+                    <div class="w-1/2 px-4">
+                      <!-- Texto à direita -->
+                      <h2 class="text-2xl font-bold mb-4">Picolé Recheado</h2>
+                      <p>Seu texto aqui... Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit.
+                        Tenetur in aliquam porro laboriosam earum perferendis
+                        libero provident neque maxime minima expedita,
+                        qui suscipit blanditiis quas, nisi quo iste,
+                        perspiciatis minus!</p>
+                        <br> <br> <br> <br>
+                        
+
+
+          <!-- Adicione mais conteúdo conforme necessário -->
+        </div>
+    </section>
+
+</main>
+
+<main>
+
+    <section class="flex mt-8">
+    <div class="w-1/2">
+      <!-- Imagem à esquerda -->
+      <img src="sorvete3.jpg" alt="Descrição da imagem" class="max-w-full h-auto rounded-full">
+    </div>
+    <div class="w-1/2 px-4">
+      <!-- Texto à direita -->
+      <h2 class="text-2xl font-bold mb-4">Sorvete Tropical</h2>
+      <p>Seu texto aqui... Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit.
+        Tenetur in aliquam porro laboriosam earum perferendis
+        libero provident neque maxime minima expedita,
+        qui suscipit blanditiis quas, nisi quo iste,
+        perspiciatis minus!</p>
+        <br>
+
+        <p>Seu texto aqui... Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit.
+            Tenetur in aliquam porro laboriosam earum perferendis
+            libero provident neque maxime minima expedita,
+            qui suscipit blanditiis quas, nisi quo iste,
+            perspiciatis minus!</p>
+            <br>
+
+        <p>Seu texto aqui... Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit.
+            Tenetur in aliquam porro laboriosam earum perferendis
+            libero provident neque maxime minima expedita,
+            qui suscipit blanditiis quas, nisi quo iste,
+            perspiciatis minus!</p>
+
+
+
+            <section class="flex mt-8">
+                <div class="w-1/2">
+                  <!-- Imagem à esquerda -->
+                  <img src="sorvete3.jpg" alt="Descrição da imagem" class="max-w-full h-auto rounded-full">
+                </div>
+                <div class="w-1/2 px-4">
+                  <!-- Texto à direita -->
+                  <h2 class="text-2xl font-bold mb-4">Sorvete Premium</h2>
+                  <p>Seu texto aqui... Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit.
+                    Tenetur in aliquam porro laboriosam earum perferendis
+                    libero provident neque maxime minima expedita,
+                    qui suscipit blanditiis quas, nisi quo iste,
+                    perspiciatis minus!</p>
+                    <br> <br> <br> <br>
+                    
+                    
+
+
+      <!-- Adicione mais conteúdo conforme necessário -->
+        </div>
+    </section>
+
+
+</main>
+
+<main>
+
+    <section class="flex mt-8">
+    <div class="w-1/2">
+      <!-- Imagem à esquerda -->
+      <img src="açai.jpg" alt="Descrição da imagem" class="max-w-full h-auto rounded-full">
+    </div>
+    <div class="w-1/2 px-4">
+      <!-- Texto à direita -->
+      <h2 class="text-2xl font-bold mb-4">Açaí Tropical</h2>
+      <p>Seu texto aqui... Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit.
+        Tenetur in aliquam porro laboriosam earum perferendis
+        libero provident neque maxime minima expedita,
+        qui suscipit blanditiis quas, nisi quo iste,
+        perspiciatis minus!</p>
+        <br>
+
+        <p>Seu texto aqui... Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit.
+            Tenetur in aliquam porro laboriosam earum perferendis
+            libero provident neque maxime minima expedita,
+            qui suscipit blanditiis quas, nisi quo iste,
+            perspiciatis minus!</p>
+            <br>
+
+        <p>Seu texto aqui... Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit.
+            Tenetur in aliquam porro laboriosam earum perferendis
+            libero provident neque maxime minima expedita,
+            qui suscipit blanditiis quas, nisi quo iste,
+            perspiciatis minus!</p>
+
+
+
+            <section class="flex mt-8">
+                <div class="w-1/2">
+                  <!-- Imagem à esquerda -->
+                  <img src="açai.jpg" alt="Descrição da imagem" class="max-w-full h-auto rounded-full">
+                </div>
+                <div class="w-1/2 px-4">
+                  <!-- Texto à direita -->
+                  <h2 class="text-2xl font-bold mb-4">Açaí Premium</h2>
+                  <p>Seu texto aqui... Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit.
+                    Tenetur in aliquam porro laboriosam earum perferendis
+                    libero provident neque maxime minima expedita,
+                    qui suscipit blanditiis quas, nisi quo iste,
+                    perspiciatis minus!</p>
+                    <br> <br> <br> <br>
+                    
+                    
+
+
+      <!-- Adicione mais conteúdo conforme necessário -->
+        </div>
+    </section>
+
+
+</main>
+
+
+
+
+
+
+
+<footer class="bg-gray-800 text-white mt-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div>
+      <h3 class="font-bold mb-2">Mapa do site</h3>
+      <ul>
+        <li><a href="#" class="footer-link">Fale Conosco</a></li>
+        <li><a href="#" class="footer-link">Aviso de Privacidade</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold mb-2">Litoral</h3>
+      <ul>
+        <li><a href="#" class="footer-link">Legal</a></li>
+        <li><a href="#" class="footer-link">Aviso de Cookies</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold mb-2">Inscreva-se</h3>
+      <ul>
+        <li><a href="#" class="footer-link">Trabalhe Conosco</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold mb-2">Ajuda</h3>
+      <ul>
+        <li><a href="#" class="footer-link">Perguntas Frequentes</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center py-4 border-t border-gray-700">
+    <p>© 2023 Litoral - Todos os Direitos Reservados</p>
+  </div>
+</footer>
+
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            var headerHeight = document.querySelector('header').offsetHeight;
+            var yOffset = 25; // Ajuste esse valor para definir o quanto mais abaixo você quer rolar
+
+            window.scrollTo({
+                top: section.offsetTop - headerHeight + yOffset,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
